@@ -1,28 +1,28 @@
 library constants;
 
 // Your wordpress website URL
-const String WORDPRESS_URL = "https://flutterblog.crumet.com";
+const String WORDPRESS_URL = "https://www.bitcoinbazis.hu";
 
 // Featured category ID (for Home Screen top section)
-const int FEATURED_ID = 2;
+const int FEATURED_ID = 22;
 
 // Tab 2 page category name
-const String PAGE2_CATEGORY_NAME = "Lifestyle";
+const String PAGE2_CATEGORY_NAME = "Kategóriák";
 
 // Tab 2 page category ID
-const int PAGE2_CATEGORY_ID = 6;
+const int PAGE2_CATEGORY_ID = 22;
 
 // Custom categories in search tab
 // Array in format
 // ["Category Name", "Image Link", "Category ID"]
 const List<dynamic> CUSTOM_CATEGORIES = [
-  ["Lifestyle", "assets/boxed/lifestyle.png", 6],
-  ["Fashion", "assets/boxed/fashion.png", 12],
-  ["Music", "assets/boxed/music.png", 14],
-  ["Photography", "assets/boxed/photography.png", 15],
-  ["Sport", "assets/boxed/sport.png", 13],
-  ["World", "assets/boxed/world.png", 11],
-  ["Health", "assets/boxed/health.png", 8],
-  ["Travel", "assets/boxed/travel.png", 7],
-  ["Recipies", "assets/boxed/recipies.png", 10],
+  ["Kriptogazdaság", "assets/boxed/lifestyle.png", 22],
+  ["Kereskedelem", "assets/boxed/fashion.png", 938],
+  ["Bányászat", "assets/boxed/music.png", 28],
+  ["Blokkláncok", "assets/boxed/photography.png", 20],
+  ["Hirdetés", "assets/boxed/sport.png", 748],
+  ["Kriptovizuál", "assets/boxed/world.png", 1009],
+  ["Szabályozás", "assets/boxed/health.png", 23],
+  ["Vélemények", "assets/boxed/travel.png", 222],
+  ["Bulvár", "assets/boxed/recipies.png", 3681],
 ];

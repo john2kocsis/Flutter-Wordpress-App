@@ -46,6 +46,7 @@ flutter:
 
   assets:
     - assets/icon.png
+    - assets/BitcoinBazisv1.jpg
     - assets/no-internet.png
     - assets/play-button.png
     - assets/boxed/fashion.png
@@ -61,6 +62,7 @@ flutter:
     - assets/more/contact.png
     - assets/more/share.png
     - assets/more/notification.png
+    - assets/more/Bitcoin-Bazisvlogo512px.png
     
 
   fonts:

@@ -4,10 +4,11 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_wordpress_app/common/constants.dart';
 import 'package:flutter_wordpress_app/models/Category.dart';
-import 'package:flutter_wordpress_app/pages/category_articles.dart';
+//import 'package:flutter_wordpress_app/pages/category_articles.dart';
 import 'package:http/http.dart' as http;
-import 'package:loading/indicator/ball_beat_indicator.dart';
-import 'package:loading/loading.dart';
+//import 'package:loading/indicator/ball_beat_indicator.dart';
+//import 'package:loading/loading.dart';
+import 'package:flutter_wordpress_app/widgets/searchBoxes.dart';
 
 class Categories extends StatefulWidget {
   @override
@@ -72,7 +73,12 @@ class _CategoriesState extends State<Categories> {
     return FutureBuilder<List<dynamic>>(
       future: categories,
       builder: (context, categorySnapshot) {
-        if (categorySnapshot.hasData) {
+        return Column(
+              children: <Widget>[
+                searchBoxes(context),
+              ],
+            );
+        /* if (categorySnapshot.hasData) {
           if (categorySnapshot.data.length == 0) return Container();
           return ListView.builder(
               scrollDirection: Axis.vertical,
@@ -160,12 +166,12 @@ class _CategoriesState extends State<Categories> {
             ),
           );
         }
-        return Container(
+        return Container( 
             alignment: Alignment.center,
             child: Loading(
                 indicator: BallBeatIndicator(),
                 size: 60.0,
-                color: Theme.of(context).accentColor));
+                color: Theme.of(context).accentColor));*/
       },
     );
   }

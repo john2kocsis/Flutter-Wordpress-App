@@ -58,7 +58,7 @@ class _SettingsState extends State<Settings> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black87,
       appBar: AppBar(
         centerTitle: true,
         title: Text(
@@ -80,7 +80,7 @@ class _SettingsState extends State<Settings> {
               alignment: Alignment.center,
               padding: EdgeInsets.fromLTRB(0, 20, 0, 10),
               child: Image(
-                image: AssetImage('assets/icon.png'),
+                image: AssetImage('assets/more/Bitcoin-Bazisvlogo512px.png'),
                 height: 50,
               ),
             ),
@@ -88,7 +88,7 @@ class _SettingsState extends State<Settings> {
               alignment: Alignment.center,
               padding: EdgeInsets.fromLTRB(0, 10, 0, 20),
               child: Text(
-                "Version 1.0.0 \n flutterblog.crumet.com \n Demo flutter app for wordpress news website",
+                "Version 1.0.0 \n www.bitcoinbazis.hu \n wordpress news website",
                 textAlign: TextAlign.center,
                 style: TextStyle(height: 1.6, color: Colors.black87),
               ),
@@ -127,10 +127,10 @@ class _SettingsState extends State<Settings> {
                   subtitle: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      FlatButton(
+                      /* FlatButton(
                           padding: EdgeInsets.all(0),
                           onPressed: () async {
-                            const url = 'https://flutterblog.crumet.com';
+                            const url = '';
                             if (await canLaunch(url)) {
                               await launch(url);
                             } else {
@@ -140,11 +140,12 @@ class _SettingsState extends State<Settings> {
                           child: Text(
                             "flutterblog.crumet.com",
                             style: TextStyle(color: Colors.black54),
-                          )),
+                          )
+                          ), */
                       FlatButton(
                           padding: EdgeInsets.all(0),
                           onPressed: () async {
-                            const url = 'mailto:info@crumet.com';
+                            const url = 'mailto:info@bitcoinbazis.hu';
                             if (await canLaunch(url)) {
                               await launch(url);
                             } else {
@@ -152,7 +153,7 @@ class _SettingsState extends State<Settings> {
                             }
                           },
                           child: Text(
-                            "info@crumet.com",
+                            "info@bitcoinbazis.hu",
                             style: TextStyle(color: Colors.black54),
                           )),
                     ],
@@ -161,7 +162,7 @@ class _SettingsState extends State<Settings> {
                 InkWell(
                   onTap: () {
                     Share.share(
-                        'Check out our blog: https://flutterblog.crumet.com');
+                        'Check out our blog: https://www.bitcoinbazis.hu');
                   },
                   child: ListTile(
                     leading: Image.asset(
@@ -169,7 +170,7 @@ class _SettingsState extends State<Settings> {
                       width: 30,
                     ),
                     title: Text('Share'),
-                    subtitle: Text("Spread the words of flutter blog crumet"),
+                    subtitle: Text("bitcoinbazis"),
                   ),
                 ),
                 ListTile(

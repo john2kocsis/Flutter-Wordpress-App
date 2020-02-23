@@ -7,7 +7,7 @@ import 'package:flutter_wordpress_app/common/constants.dart';
 import 'package:flutter_wordpress_app/models/Article.dart';
 import 'package:flutter_wordpress_app/pages/single_article.dart';
 import 'package:flutter_wordpress_app/widgets/articleBox.dart';
-import 'package:flutter_wordpress_app/widgets/searchBoxes.dart';
+//import 'package:flutter_wordpress_app/widgets/searchBoxes.dart';
 import 'package:http/http.dart' as http;
 import 'package:loading/indicator/ball_beat_indicator.dart';
 import 'package:loading/loading.dart';
@@ -105,7 +105,7 @@ class _SearchState extends State<Search> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text('Search',
+        title: Text('Keresés',
             style: TextStyle(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
@@ -129,7 +129,7 @@ class _SearchState extends State<Search> {
                     child: TextField(
                         controller: _textFieldController,
                         decoration: InputDecoration(
-                          labelText: 'Search news',
+                          labelText: 'Hírek keresése',
                           suffixIcon: _searchText == ""
                               ? Icon(Icons.search)
                               : IconButton(
@@ -171,13 +171,13 @@ class _SearchState extends State<Search> {
       future: articles,
       builder: (context, articleSnapshot) {
         if (articleSnapshot.hasData) {
-          if (articleSnapshot.data.length == 0) {
+          /* if (articleSnapshot.data.length == 0) {
             return Column(
               children: <Widget>[
                 searchBoxes(context),
               ],
             );
-          }
+          } */
           return Column(
             children: <Widget>[
               Column(

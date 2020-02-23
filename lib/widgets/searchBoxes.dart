@@ -4,7 +4,7 @@ import 'package:flutter_wordpress_app/pages/category_articles.dart';
 
 Widget searchBoxes(BuildContext context) {
   return GridView.count(
-    padding: EdgeInsets.all(16),
+    padding: EdgeInsets.all(10),
     shrinkWrap: true,
     physics: ScrollPhysics(),
     crossAxisCount: 3,
@@ -28,13 +28,13 @@ Widget searchBoxes(BuildContext context) {
             padding: EdgeInsets.fromLTRB(8, 16, 8, 8),
             child: Column(
               children: <Widget>[
-                SizedBox(width: 100, height: 45, child: Image.asset(image)),
+                SizedBox(width: 110, height: 45, child: Image.asset(image)),
                 Spacer(),
                 Text(
                   name,
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    fontSize: 15,
+                    fontSize: 12,
                     height: 1.2,
                     fontWeight: FontWeight.w500,
                   ),

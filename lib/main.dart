@@ -1,9 +1,9 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_wordpress_app/common/constants.dart';
+//import 'package:flutter_wordpress_app/common/constants.dart';
 import 'package:flutter_wordpress_app/pages/articles.dart';
 import 'package:flutter_wordpress_app/pages/categories.dart';
-import 'package:flutter_wordpress_app/pages/local_articles.dart';
+//import 'package:flutter_wordpress_app/pages/local_articles.dart';
 import 'package:flutter_wordpress_app/pages/search.dart';
 import 'package:flutter_wordpress_app/pages/settings.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Icilome',
+        title: 'Bitcoin Bázis',
         theme: ThemeData(
           brightness: Brightness.light,
           primaryColor: Color(0xFF385C7B),
@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
   final List<Widget> _widgetOptions = [
     Articles(),
-    LocalArticles(),
+    //LocalArticles(),
     Categories(),
     Search(),
     Settings()
@@ -117,12 +117,12 @@ class _MyHomePageState extends State<MyHomePage> {
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
                 icon: Icon(Icons.home), title: Text('Home')),
+            //BottomNavigationBarItem(
+              //  icon: Icon(Icons.flare), title: Text(PAGE2_CATEGORY_NAME)),
             BottomNavigationBarItem(
-                icon: Icon(Icons.flare), title: Text(PAGE2_CATEGORY_NAME)),
+                icon: Icon(Icons.category), title: Text('Kategóri')),
             BottomNavigationBarItem(
-                icon: Icon(Icons.category), title: Text('Categories')),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.search), title: Text('Search')),
+                icon: Icon(Icons.search), title: Text('Keresés')),
             BottomNavigationBarItem(
                 icon: Icon(Icons.menu), title: Text('More')),
           ],

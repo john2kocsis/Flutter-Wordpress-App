@@ -54,7 +54,7 @@ class _ArticlesState extends State<Articles> {
                 .decode(response.body)
                 .map((m) => Article.fromJson(m))
                 .toList());
-            if (latestArticles.length % 10 != 0) {
+            if (latestArticles.length % 20 != 0) {
               _infiniteStop = true;
             }
           });
@@ -113,9 +113,10 @@ class _ArticlesState extends State<Articles> {
     return Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
+          centerTitle: true,
           title: Image(
-            image: AssetImage('assets/icon.png'),
-            height: 45,
+            image: AssetImage('assets/BitcoinBazisv1.jpg'),
+            height: 45,            
           ),
           elevation: 5,
           backgroundColor: Colors.white,
@@ -175,7 +176,7 @@ class _ArticlesState extends State<Articles> {
         return Container(
             alignment: Alignment.center,
             width: MediaQuery.of(context).size.width,
-            height: 150,
+            height: 50,
             child: Loading(
                 indicator: BallBeatIndicator(),
                 size: 60.0,

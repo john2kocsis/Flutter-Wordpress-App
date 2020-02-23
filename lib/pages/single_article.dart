@@ -102,7 +102,7 @@ class _SingleArticleState extends State<SingleArticle> {
                         tag: heroId,
                         child: ClipRRect(
                           borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(60.0)),
+                              bottomLeft: Radius.circular(20.0)),
                           child: ColorFiltered(
                             colorFilter: ColorFilter.mode(
                                 Colors.black.withOpacity(0.3),

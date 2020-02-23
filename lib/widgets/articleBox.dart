@@ -7,7 +7,7 @@ Widget articleBox(BuildContext context, Article article, String heroId) {
   return ConstrainedBox(
     constraints: new BoxConstraints(
       minHeight: 160.0,
-      maxHeight: 175.0,
+      maxHeight: 200.0,
     ),
     child: Stack(
       children: <Widget>[
@@ -95,7 +95,7 @@ Widget articleBox(BuildContext context, Article article, String heroId) {
           ),
         ),
         SizedBox(
-          height: 170,
+          height: 160,
           width: 145,
           child: Card(
             child: Hero(
@@ -104,7 +104,7 @@ Widget articleBox(BuildContext context, Article article, String heroId) {
                 borderRadius: new BorderRadius.circular(8.0),
                 child: Image.network(
                   article.image,
-                  fit: BoxFit.cover,
+                  fit: BoxFit.fill,
                 ),
               ),
             ),
@@ -118,7 +118,7 @@ Widget articleBox(BuildContext context, Article article, String heroId) {
         article.video != ""
             ? Positioned(
                 left: 12,
-                top: 12,
+                top: 0,
                 child: Card(
                   color: Theme.of(context).accentColor,
                   child: CircleAvatar(
